@@ -1,0 +1,170 @@
+:root {
+  font-family: 'Roboto', sans-serif;
+  --prime-color: #007bff;
+  --secondary-color: #fff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
+.main {
+  padding: 4.4rem 1rem;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+  padding: 0 1.5rem;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.company-name {
+  font-size: 1.15rem;
+}
+
+.nav {
+  font-weight: 400;
+}
+
+.nav__link {
+  color: #000;
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  text-decoration: underline;
+}
+
+.nav__link:nth-last-child(n+1) {
+  margin-right: .6em;
+}
+
+.h1 {
+  margin: 0;
+  font-size: 3.2rem;
+  font-weight: 400;
+}
+
+.desc {
+  max-width: 58ch;
+  margin: .6rem auto;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.plans-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.plans-wrapper>.plan {
+  flex-grow: 1;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.plan {
+  --border-style: 1px solid rgba(0, 0, 0, .125);
+  display: flex;
+  flex-direction: column;
+  border: var(--border-style);
+  border-radius: 0.3rem;
+  font-size: 1rem;
+}
+
+.plan__header {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  border-bottom: var(--border-style);
+  background-color: rgba(0, 0, 0, .03);
+  font-weight: 400;
+  line-height: 2.2;
+  text-transform: capitalize;
+}
+
+.plan__body {
+  padding: 1.2em;
+}
+
+.plan__cost {
+  line-height: 1.4;
+  text-align: center;
+}
+
+.plan__price {
+  font-size: 2.5em;
+}
+
+.plan__per {
+  color: rgba(0, 0, 0, .5);
+  font-size: 2em;
+}
+
+.plan__desc {
+  padding: 0;
+  list-style-type: none;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.plan__btn {
+  display: block;
+  margin-top: 1.5em;
+  font-size: 1.25em;
+}
+
+.btn {
+  box-sizing: border-box;
+  padding: .56em .56em;
+  transition-property: color, background-color;
+  transition-duration: 150ms;
+  transition-timing-function: ease-in-out;
+  border: 1px solid var(--prime-color);
+  border-radius: 0.3rem;
+  background-color: var(--prime-color);
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--prime-color);
+  color: var(--secondary-color);
+}
+
+.btn--outline {
+  background-color: var(--secondary-color);
+  color: var(--prime-color);
+}
+
+.btn--inverse {
+  background-color: var(--prime-color);
+  color: var(--secondary-color);
+}
+
+.link-list {
+  display: flex;
+  flex-direction: column;
+}
