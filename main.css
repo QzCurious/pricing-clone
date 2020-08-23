@@ -30,7 +30,13 @@ body {
 
 .footer {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.icon{
+  width: 24px;
+  height: 24px;
 }
 
 .company-name {
@@ -164,7 +170,23 @@ body {
   color: var(--secondary-color);
 }
 
-.link-list {
+.list {
   display: flex;
   flex-direction: column;
+  width: max-content;
+}
+
+.list__link {
+  color: rgba(0, 0, 0, .5);
+  text-decoration: none;
+}
+
+.h3 {
+  margin: 0 0 .5em 0;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.copyright {
+  white-space: nowrap;
 }
